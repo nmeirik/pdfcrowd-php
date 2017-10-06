@@ -626,7 +626,7 @@ Links:
 
         if ($this->scheme == 'https' && HOST == 'api.pdfcrowd.com') {
             curl_setopt($c, CURLOPT_SSL_VERIFYPEER, true);
-            curl_setopt($c, CURLOPT_SSL_VERIFYHOST, true);
+            curl_setopt($c, CURLOPT_SSL_VERIFYHOST, 2);
         } else {
             curl_setopt($c, CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($c, CURLOPT_SSL_VERIFYHOST, false);
